@@ -134,3 +134,44 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 10px; }
+
+.pageTitle, .section__title, .subTitle, .block__title, .button {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
+
+.pageTitle {
+  font-size: 83px;
+  font-size: 8.3rem;
+  font-color: #1d1d1d; }
+
+.section__title {
+  font-size: 48px;
+  font-size: 4.8rem; }
+
+.subTitle {
+  font-size: 34px;
+  font-size: 3.4rem; }
+
+.block__title {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+header {
+  background-image: url(../corporate/assets/image-1.jpeg);
+  background-position: center;
+  background-size: cover; }
+
+.wrapper {
+  width: 83%;
+  margin: auto; }
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.navBar__list {
+  list-style-type: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 35%;
+  flex: 1 0 35%; }

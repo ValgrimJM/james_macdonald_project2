@@ -1,0 +1,18 @@
+header{
+    background-image: url(../corporate/assets/image-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.wrapper{
+    width: 83%;
+    margin: auto;
+}
+.navBar{
+    display: flex;
+
+}
+.navBar__list{
+    list-style-type: none;
+    flex: 1 0 35%;
+}

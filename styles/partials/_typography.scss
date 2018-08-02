@@ -1,3 +1,28 @@
+$montserrat: "Montserrat", sans-serif;
+$openSans: "OpenSans", sans-serif;
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
 html{
     font-size: 10px;
+}
+.pageTitle,.section__title,.subTitle,.block__title,.button{
+    text-transform: uppercase;
+    font-family: $montserrat;
+}
+
+.pageTitle{
+    @include fontSize(83);
+    font-color: $darkGrey;
+}
+.section__title{
+    @include fontSize(48);
+}
+.subTitle{
+    @include fontSize(34);
+}
+.block__title{
+    @include fontSize(24);
 }

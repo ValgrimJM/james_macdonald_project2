@@ -1,0 +1,27 @@
+$darkBlue: #0e5f88;
+$lightBlue: #8ecceb;
+$lightGrey: #f1f3f3;
+$midGrey: #d2d7d8;
+$darkGrey: #1d1d1d;
+$white: #ffffff;
+$titleGrey: #dfdede;
+$textGrey: #5d5e5d;
+
+$socialGrey: #848484;
+$lineGrey: #898989;
+$arrowGrey: #cacecf;
+$airplaneGrey: #908e8e;
+$buttonGrey: #efeeee;
+$questionGrey: #1d1c1c;
+$teamGrey: #eeeded;
+
+$transparentGrey: rgba(229,227,227,0.5);
+
+$overlayGreyTransp: rgba(29,29,29, 0.78);
+$overlayGreyTransl: rgba(29,29,29,0.83);
+$overlayGreyText: #e6e2e2;
+
+@mixin wrapper($width){
+    width: $width * 1%;
+    margin: 0 auto;
+}
