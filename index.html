@@ -4,260 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>James MacDonald - Project 2 Responsive</title>
 </head>
 <body>
-    
-    <header class="section__wrapper">
-        <div class="wrapper">
-            <nav class="navBar">
-                <h2 class="section__title">Corporate</h2>
-                <ul class="navBar__list">
-                    <li><a href="#" class="navBar_link">Home</a></li>
-                    <li><a href="#" class="navBar_link">Demo</a></li>
-                    <li><a href="#" class="navBar_link">Blog</a></li>
-                    <li><a href="#" class="navBar_link">Pages</a></li>
-                    <li><a href="#" class="navBar_link">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="welcome">
-                <h1 class="pageTitle">Welcome</h1>
-                <h3 class="subTitle">To my Corporate Website</h3>
-                <button class="button">Start</button>
+    <div class="bodyWrapper">
+        <!-- Header Bar and Upper Nav -->
+        
+        <header class="section section__header" title="Corporate Building">
+            <div class="section__wrapper">
+                <div class="section__title__block">
+                    <h2 class="section__title">Corporate</h2>
+                </div>
+                <nav class="navBar">
+                    <ul class="navBar__list">
+                        <li><a href="#" class="navBar__link">Home</a></li>
+                        <li><a href="#" class="navBar__link">Demo</a></li>
+                        <li><a href="#" class="navBar__link">Blog</a></li>
+                        <li><a href="#" class="navBar__link">Pages</a></li>
+                        <li><a href="#" class="navBar__link">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="welcome">
+                    <h1 class="pageTitle">Welcome</h1>
+                    <h3 class="subTitle">To my Corporate Website</h3>
+                    <button class="button">Start</button>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="section">
-        <h2 class="section__title">Welcome to <span class="section__title__blue">Corporate</span></h2>
-        <p>
-            Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi.
-        </p>
-        <button class="button">Know More</button>
-    </section>
-    <section class="section section__grey">
-        <h2 class="section__title">Why Choose Us?</h2>
-        <article class="article">
+        </header>
+        <!-- Welcome Section -->
+        <section class="section">
+            <div class="section__wrapper section__wrapper__">
+                <h2 class="section__title">Welcome to <span class="section__title__blue">Corporate</span></h2>
+                <p class="section__text">
+                    Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi.
+                </p>
+                <button class="button">Know More</button>
+            </div>
+        </section>
+        <!-- Why Choose Us Section -->
+        <section class="section section__grey">
+            <section class="articleBlock">
+                <h2 class="section__title">Why Choose Us?</h2>
+                <article class="article">
+                    <img src="" alt="">
+                    <h3 class="subTitle subTitle__firstCap">15 Years of experience</h3>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+                    </p>
+                </article>
+                <article class="article">
+                    <img src="" alt="">
+                    <h3 class="subTitle">900+ Happy clients</h3>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+                    </p>
+                </article>
+            </section>
+            <img src="corporate/assets/image-4.jpeg" alt="Buisness Deal Handshake"class="articleImg">
+        </section>
+        <!-- Services Triple Block Section -->
+        <section class="section">
+            <h2 class="section__title"></h2>
+            <div class="block">
+                <h4 class="block__title">UX/UI Design</h4>
+                <p class="block__text">
+                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
+                </p>
+                <ul class="block__list">
+                    <li>Lorem ipsm</li>
+                    <li>Dolor sit amet</li>
+                    <li>Cons ecteur</li>
+                </ul>
+            </div>
+            <div class="block block__blue">
+                <h4 class="block__title">Programming</h4>
+                <p class="block__text">
+                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
+                </p>
+                <ul class="block__list">
+                    <<li>Lorem ipsm</li>
+                    <li>Dolor sit amet</li>
+                    <li>Cons ecteur</li>
+                </ul>
+            </div>
+            <div class="block">
+                <h4 class="block__title">Analytics</h4>
+                <p class="block__text"></p>
+                <ul class="block__list">
+                    <li>Lorem ipsm</li>
+                    <li>Dolor sit amet</li>
+                    <li>Cons ecteur</li>
+                </ul>
+            </div>
+        </section>
+        <!-- People Say About Us Section -->
+        <section class="section section__black">
+            <h2 class="section__title"></h2>
             <img src="" alt="">
-            <h3 class="subTitle subTitle__firstCap">15 Years of experience</h3>
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+            <p class="sectionText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque
+                velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
             </p>
-        </article>
-        <article class="article">
-            <img src="" alt="">
-            <h3 class="subTitle">900+ Happy clients</h3>
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+            <p>
+                Lewis
             </p>
-        </article>
-        <img src="" alt="">
-    </section>
-    <section class="section">
-        <h2 class="section__title"></h2>
-        <div class="block">
-            <h4 class="block__title">UX/UI Design</h4>
-            <p class="block__text">
-                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
-            </p>
-            <ul class="block__list">
-                <li>Lorem ipsm</li>
-                <li>Dolor sit amet</li>
-                <li>Cons ecteur</li>
-            </ul>
-        </div>
-        <div class="block block__blue">
-            <h4 class="block__title">Programming</h4>
-            <p class="block__text">
-                Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
-            </p>
-            <ul class="block__list">
-                <<li>Lorem ipsm</li>
-                <li>Dolor sit amet</li>
-                <li>Cons ecteur</li>
-            </ul>
-        </div>
-        <div class="block">
-            <h4 class="block__title">Analytics</h4>
-            <p class="block__text"></p>
-            <ul class="block__list">
-                <li>Lorem ipsm</li>
-                <li>Dolor sit amet</li>
-                <li>Cons ecteur</li>
-            </ul>
-        </div>
-    </section>
-    <section class="section section__black">
-        <h2 class="section__title"></h2>
-        <img src="" alt="">
-        <p class="sectionText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque
-            velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p>
-        <p>
-            Lewis
-        </p>
-        <div class="gallery">
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlayText">
-                        <h3 class="article__title"></h3>
-                        <p class="article__text"></p>
+            <div class="gallery">
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlayText">
+                            <h3 class="article__title"></h3>
+                            <p class="article__text"></p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlayText">
-                        <h3 class="article__title"></h3>
-                        <p class="article__text"></p>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlayText">
+                            <h3 class="article__title"></h3>
+                            <p class="article__text"></p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlayText">
-                        <h3 class="article__title"></h3>
-                        <p class="article__text"></p>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlayText">
+                            <h3 class="article__title"></h3>
+                            <p class="article__text"></p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlayText">
-                        <h3 class="article__title"></h3>
-                        <p class="article__text"></p>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlayText">
+                            <h3 class="article__title"></h3>
+                            <p class="article__text"></p>
+                        </div>
                     </div>
-                </div>
-            </figure>
-        </div>
-    </section>
-    <section class="section sectionWrapper">
-        <h2 class="section__title"></h2>
-        <figure></figure>
-        <article class="article">
-            <h3 class="article__title">Design</h3>
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-            <button class="button"></button>
-        </article>
-        <figure></figure>
-        <article class="article">
-            <h3 class="article__title">Analytics</h3>
-            <p class="article__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-            <button class="button"></button>
-        </article>
-    </section>
-    <section class="section section__blue">
-        <h2 class="section__title">Ask a Question</h2>
-        <form action="" class="questionForm">
-            <input type="text" placeholder="Your Message" class="questionInput">
-            <button class="button button__black">Send</button>
-        </form>
-    </section>
-    <section class="section section__wrapper">
-        <h2 class="section__title"></h2>
-        <div class="gallery">
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlay__text"></div>
-                </div>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlay__text"></div>
-                </div>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <div class="gallery__overlay">
-                    <div class="gallery__overlay__text"></div>
-                </div>
-            </figure>
-        </div>
-    </section>
-    <footer>
+                </figure>
+            </div>
+        </section>
+        <!-- Services Four Block Section -->
+        <section class="section sectionWrapper">
+            <h2 class="section__title"></h2>
+            <figure></figure>
+            <article class="article">
+                <h3 class="article__title">Design</h3>
+                <p class="article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <button class="button"></button>
+            </article>
+            <figure></figure>
+            <article class="article">
+                <h3 class="article__title">Analytics</h3>
+                <p class="article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                </p>
+                <button class="button"></button>
+            </article>
+        </section>
+        <!-- Ask a Question Section -->
+        <section class="section section__blue">
+            <h2 class="section__title">Ask a Question</h2>
+            <form action="" class="questionForm">
+                <input type="text" placeholder="Your Message" class="questionInput">
+                <button class="button button__black">Send</button>
+            </form>
+        </section>
+        <!-- Meet the Team Section -->
         <section class="section section__wrapper">
-            <div class="block">
-                <h4 class="block__title">infohackeryou.com</h4>
-                <p class="block__text">123-456-7890</p>
-                <p class="block__text">Toronto, Ontario</p>
-                <p class="block__text"></p>
-                <input type="email" placeholder="email address" class="block__input">
-                <input type="submit" class="block__button">
+            <h2 class="section__title"></h2>
+            <div class="gallery">
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlay__text"></div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlay__text"></div>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <div class="gallery__overlay">
+                        <div class="gallery__overlay__text"></div>
+                    </div>
+                </figure>
             </div>
-            <div class="block">
-                <h4 class="block__title">About Us</h4>
-                <p class="block__text"></p>
-            </div>
-            <div class="block">
-                <h4 class="block__title">Instagram</h4>
-                <div class="gallery">
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
-                    <figure>
-                        <img src="" alt="">
-                        <div class="gallery__overlay"></div>
-                    </figure>
+        </section>
+        <!-- Footer and Lower Nav -->
+        <footer>
+            <section class="section section__wrapper">
+                <div class="block">
+                    <h4 class="block__title">infohackeryou.com</h4>
+                    <p class="block__text">123-456-7890</p>
+                    <p class="block__text">Toronto, Ontario</p>
+                    <p class="block__text"></p>
+                    <input type="email" placeholder="email address" class="block__input">
+                    <input type="submit" class="block__button">
                 </div>
-            </div>
-        </section>
-        <section class="footerNav section__wrapper">
-            <h3></h3>
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                <p class="copyright__text">2018 All rights reserved &copy;</p>
-            </div>
-        </section>
-        <aside class="socialIcons">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </aside>
-    </footer>
+                <div class="block">
+                    <h4 class="block__title">About Us</h4>
+                    <p class="block__text"></p>
+                </div>
+                <div class="block">
+                    <h4 class="block__title">Instagram</h4>
+                    <div class="gallery">
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                        <figure>
+                            <img src="" alt="">
+                            <div class="gallery__overlay"></div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="footerNav section__wrapper">
+                <h3></h3>
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    <p class="copyright__text">2018 All rights reserved &copy;</p>
+                </div>
+            </section>
+            <aside class="socialIcons">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </aside>
+        </footer>
+    </div>
 </body>
 </html>

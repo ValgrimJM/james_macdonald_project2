@@ -2,3 +2,60 @@
 @import "partials/_utils.scss";
 @import "partials/_typography.scss";
 @import "partials/_header.scss";
+
+.bodyWrapper{
+    max-width: 1920px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.button{
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: $darkBlue;
+    color: $buttonGrey;
+    border: none;
+    transition: 0.5s;
+    &:hover{
+        background-color: $buttonGrey;
+        color: $darkBlue;
+        border: 1px solid $darkBlue;
+        transition: 0.5s;
+    }
+}
+.section__title__block .section__title{
+    margin: 25px 0;
+}
+.section__wrapper, .wrapper{
+    @include wrapper(60);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+.section{
+    flex: 1 0 100%;
+}
+.section__title__blue{
+    color: $darkBlue;
+}
+.section__grey{
+    background-color: $lightGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articleBlock{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.articleImg{
+    width: 50%;
+    height:auto;
+}
+@import "partials/_media.scss";

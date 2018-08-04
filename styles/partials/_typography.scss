@@ -6,7 +6,7 @@ $openSans: "OpenSans", sans-serif;
     font-size: ($sizeValue/10) * 1rem;
 }
 html{
-    font-size: 10px;
+    font-size: 40%;
 }
 .pageTitle,.section__title,.subTitle,.block__title,.button{
     text-transform: uppercase;
@@ -16,13 +16,30 @@ html{
 .pageTitle{
     @include fontSize(83);
     font-color: $darkGrey;
+    margin: 0;
 }
 .section__title{
     @include fontSize(48);
+    margin: 0;
 }
 .subTitle{
     @include fontSize(34);
 }
-.block__title{
+.block__title, .navBar__link, .button{
     @include fontSize(24);
+}
+.section__text{
+    @include fontSize(26);
+    color: $textGrey;
+    text-align: center;
+    margin: 35px 0;
+}
+.article__text{
+    @include fontSize(16);
+}
+@media(max-width: 940px){
+    html{
+        font-size: 50%;
+    }
+
 }

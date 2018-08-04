@@ -1,18 +1,44 @@
-header{
+.section__header{
     background-image: url(../corporate/assets/image-1.jpeg);
     background-position: center;
     background-size: cover;
-    
+    height: 100vh;
 }
-.wrapper{
-    width: 83%;
-    margin: auto;
+.section__header .section__wrapper{
+    position: relative;
+    padding: 0;
 }
+
 .navBar{
     display: flex;
-
+    flex: 1 0 33%;
 }
 .navBar__list{
     list-style-type: none;
-    flex: 1 0 35%;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0;
+}
+.navBar__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $darkGrey;
+    font-weight: 700;
+    padding: 0 15px;
+}
+.navBar__list>li:last-child>.navBar__link{
+    padding-right: 0;
+}
+.welcome{
+    position: absolute;
+    top: 250%;
+    left: 0;
+}
+.welcome .button{
+    margin-top: 20px;
+}
+.welcome .subTitle{
+    margin: 5px 0;
 }
