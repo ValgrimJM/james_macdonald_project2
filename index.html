@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>James MacDonald - Project 2 Responsive</title>
 </head>
@@ -35,7 +36,7 @@
         </header>
         <!-- Welcome Section -->
         <section class="section">
-            <div class="section__wrapper section__wrapper__">
+            <div class="section__wrapper">
                 <h2 class="section__title">Welcome to <span class="section__title__blue">Corporate</span></h2>
                 <p class="section__text">
                     Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi.
@@ -46,73 +47,92 @@
         <!-- Why Choose Us Section -->
         <section class="section section__grey">
             <section class="articleBlock">
-                <h2 class="section__title">Why Choose Us?</h2>
-                <article class="article">
-                    <img src="" alt="">
-                    <h3 class="subTitle subTitle__firstCap">15 Years of experience</h3>
-                    <p class="article__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
-                    </p>
-                </article>
-                <article class="article">
-                    <img src="" alt="">
-                    <h3 class="subTitle">900+ Happy clients</h3>
-                    <p class="article__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
-                    </p>
-                </article>
+                <div class="article__wrapper">
+                    <h2 class="section__title">Why Choose Us?</h2>
+                    <article class="article">
+                        <img src="corporate/assets/image-2.jpeg" alt="Sweet Bearded Man on Phone" class="article__image">
+                        <div class="article__text">
+                            <h3 class="subTitle subTitle__firstCap">15 Years of experience</h3>
+                            <p class="article__para">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img src="corporate/assets/image-3.jpeg" alt="Woman Flipping Hair" class="article__image">
+                        <div class="article__text">
+                            <h3 class="subTitle">900+ Happy clients</h3>
+                            <p class="article__para">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </section>
             <img src="corporate/assets/image-4.jpeg" alt="Buisness Deal Handshake"class="articleImg">
         </section>
         <!-- Services Triple Block Section -->
-        <section class="section">
-            <h2 class="section__title"></h2>
-            <div class="block">
-                <h4 class="block__title">UX/UI Design</h4>
-                <p class="block__text">
-                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
-                </p>
-                <ul class="block__list">
-                    <li>Lorem ipsm</li>
-                    <li>Dolor sit amet</li>
-                    <li>Cons ecteur</li>
-                </ul>
-            </div>
-            <div class="block block__blue">
-                <h4 class="block__title">Programming</h4>
-                <p class="block__text">
-                    Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
-                </p>
-                <ul class="block__list">
-                    <<li>Lorem ipsm</li>
-                    <li>Dolor sit amet</li>
-                    <li>Cons ecteur</li>
-                </ul>
-            </div>
-            <div class="block">
-                <h4 class="block__title">Analytics</h4>
-                <p class="block__text"></p>
-                <ul class="block__list">
-                    <li>Lorem ipsm</li>
-                    <li>Dolor sit amet</li>
-                    <li>Cons ecteur</li>
-                </ul>
+        <section class="section section__services">
+            <div class="section__wrapper">
+                <h2 class="section__title">Services</h2>
+                <div class="section__block">
+                    <div class="block">
+                        <h4 class="block__title"><i class="fas fa-object-group"></i></h4>
+                        <h4 class="block__title">UX/UI Design</h4>
+                        <p class="block__text">
+                            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
+                        </p>
+                        <ul class="block__list">
+                            <li class="block__listItem"><i class="fas fa-check"></i> Lorem ipsm</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Dolor sit amet</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Cons ecteur</li>
+                        </ul>
+                    </div>
+                    <div class="block block__blue">
+                        <h4 class="block__title"><i class="fas fa-laptop"></i></h4>
+                        <h4 class="block__title">Programming</h4>
+                        <p class="block__text">
+                            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
+                        </p>
+                        <ul class="block__list">
+                            <li class="block__listItem"><i class="fas fa-check"></i> Lorem ipsm</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Dolor sit amet</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Cons ecteur</li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h4 class="block__title"><i class="fas fa-chart-line"></i></h4>
+                        <h4 class="block__title">Analytics</h4>
+                        <p class="block__text">
+                            Lorem ipsum dolor sit amet, cons ectetur adipiscing elit
+                        </p>
+                        <ul class="block__list">
+                            <li class="block__listItem"><i class="fas fa-check"></i> Lorem ipsm</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Dolor sit amet</li>
+                            <li class="block__listItem"><i class="fas fa-check"></i> Cons ecteur</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- People Say About Us Section -->
         <section class="section section__black">
-            <h2 class="section__title"></h2>
-            <img src="" alt="">
-            <p class="sectionText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque
-                velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            </p>
-            <p>
-                Lewis
-            </p>
+            <div class="section__wrapper">
+                <h2 class="section__title section__title__grey">People Say About Us</h2>
+                <i class="fas fa-angle-left"><a></a></i>
+                <img src="corporate/assets/image-5.jpeg" alt="Beard and Glasses" class="section__image__black">
+                <i class="fas fa-angle-right"><a></a></i>
+                <p class="section__text section__text__grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque
+                    velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+                <p class="section__text section__text__italic">
+                    Lewis
+                </p>
+            </div>
             <div class="gallery">
                 <figure>
-                    <img src="" alt="">
+                    <img src="corporate/assets/image-6.jpeg" alt="Working on Papers">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
                             <h3 class="article__title"></h3>
@@ -121,7 +141,7 @@
                     </div>
                 </figure>
                 <figure>
-                    <img src="" alt="">
+                    <img src="corporate/assets/image-7.jpeg" alt="Metalic Pyramid">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
                             <h3 class="article__title"></h3>
@@ -130,7 +150,7 @@
                     </div>
                 </figure>
                 <figure>
-                    <img src="" alt="">
+                    <img src="corporate/assets/image-8.jpeg" alt="City Skyline">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
                             <h3 class="article__title"></h3>
@@ -139,7 +159,7 @@
                     </div>
                 </figure>
                 <figure>
-                    <img src="" alt="">
+                    <img src="corporate/assets/image-9.jpeg" alt="Madcap Coffe Cups">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
                             <h3 class="article__title"></h3>

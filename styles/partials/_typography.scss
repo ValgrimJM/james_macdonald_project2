@@ -6,7 +6,7 @@ $openSans: "OpenSans", sans-serif;
     font-size: ($sizeValue/10) * 1rem;
 }
 html{
-    font-size: 40%;
+    font-size: 35%;
 }
 .pageTitle,.section__title,.subTitle,.block__title,.button{
     text-transform: uppercase;
@@ -34,12 +34,16 @@ html{
     text-align: center;
     margin: 35px 0;
 }
-.article__text{
+.article__text, .article__para, .block__text, .block__list{
+    font-family: $openSans;
     @include fontSize(16);
+}
+.block .fa-chart-line, .block .fa-laptop, .block .fa-object-group{
+    @include fontSize(80);
 }
 @media(max-width: 940px){
     html{
-        font-size: 50%;
+        font-size: 45%;
     }
 
 }

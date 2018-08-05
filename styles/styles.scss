@@ -35,6 +35,12 @@
     justify-content: center;
     padding: 40px 0;
 }
+.article__wrapper{
+    @include wrapper(65);
+    .section__title{
+        margin-bottom: 40px;
+    }
+}
 .section{
     flex: 1 0 100%;
 }
@@ -47,15 +53,118 @@
     justify-content: center;
     align-items: center;
 }
+//**************Article styles*********************
+.article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
 .articleBlock{
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    .article__image{
+        height: 70px;
+        margin-right: 10px;
+    }
+    .article__text{
+        .subTitle{
+            margin: 0;
+            text-transform: capitalize;
+        }
+    }
 }
 .articleImg{
     width: 50%;
     height:auto;
+}
+//**************Services Block styles*********************
+.section__services{
+    .section__title{
+        text-align: center;
+        flex: 0 0 100%;
+    }
+}
+.section__block{
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        .block{
+            border: 1px solid $lightBlue; 
+            border-radius: 10px;
+            max-width: 30%;
+            padding: 20px 20px;
+            .block__title, .block__text{
+                text-align: center;
+            }
+            .block__list{
+                margin: 0 auto;
+                width: 50%;
+                list-style-type: none;
+                padding: 0;
+            }
+            .block__title:first-child{
+                transition: 0.5s;
+            }
+            .block__title:first-child:hover{
+                @include fontSize(90);
+                margin: 0;
+                color: $darkBlue;
+                transition: 0.5s;
+            }
+        }
+        .block__blue{
+            background-color: $lightBlue;
+        }
+    }
+.block__listItem{
+    margin-bottom: 5px;
+}
+//**************About Us Block styles*********************
+.section__black{
+    background-color: $darkGrey;
+    .fa-angle-left, .fa-angle-right{
+        color: $arrowGrey;
+        flex: 0 0 3%;
+        @include fontSize(55);
+        transition: 0.5s;
+        &:hover{
+            @include fontSize(65); 
+            color:$darkBlue;
+            transition: 0.5s;
+        }
+    }
+    .section__wrapper{
+        align-items: center;
+    }
+}
+.section__title__grey{
+    color: $titleGrey;
+    flex: 1 0 100%;
+    text-align: center;
+}
+.section__text__grey{
+    color: $midGrey;
+}
+.section__text__italic{
+    color: $white;
+    font-style: italic;
+}
+.section__image__black{
+    height: 125px;
+    position: relative;
+    margin: 0 25px;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    figure{
+        flex: 1 0 25%;
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
 }
 @import "partials/_media.scss";
