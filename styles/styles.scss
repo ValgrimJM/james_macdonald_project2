@@ -28,6 +28,10 @@
 .section__title__block .section__title{
     margin: 25px 0;
 }
+.section__title{
+        text-align: center;
+        flex: 0 0 100%;
+    }
 .section__wrapper, .wrapper{
     @include wrapper(60);
     display: flex;
@@ -37,9 +41,6 @@
 }
 .article__wrapper{
     @include wrapper(65);
-    .section__title{
-        margin-bottom: 40px;
-    }
 }
 .section{
     flex: 1 0 100%;
@@ -52,6 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    .section__title{
+        margin-bottom: 40px;
+    }
 }
 //**************Article styles*********************
 .article{
@@ -79,12 +84,7 @@
     height:auto;
 }
 //**************Services Block styles*********************
-.section__services{
-    .section__title{
-        text-align: center;
-        flex: 0 0 100%;
-    }
-}
+    
 .section__block{
         flex: 1 0 100%;
         display: flex;
@@ -143,6 +143,7 @@
     color: $titleGrey;
     flex: 1 0 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 .section__text__grey{
     color: $midGrey;
@@ -150,6 +151,9 @@
 .section__text__italic{
     color: $white;
     font-style: italic;
+    margin-top: 0;
+    font-family: $montserrat;
+    font-weight: 400;
 }
 .section__image__black{
     height: 125px;
@@ -159,12 +163,142 @@
 .gallery{
     display: flex;
     flex-direction: row;
-    figure{
+    
+}
+.gallery__figure{
+        position: relative;
         flex: 1 0 25%;
-        img{
+        .gallery__img{
             max-width: 100%;
             height: 100%;
         }
+        .gallery__overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: $overlayGreyTransp;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        &:hover .gallery__overlay{
+            opacity: 1;
+        }
+    }
+.gallery__overlayText{
+    padding:20px;
+    margin:20px;
+    border: 1px solid $overlayGreyText;
+    border-radius: 10px;
+    text-align: center;
+    color: $overlayGreyText;
+}
+//**************Four Squares Block styles*********************
+.article__fourSquare{
+    flex: 0 1 50%;
+    flex-direction: column;
+    padding: 0 7%;
+    position: relative;
+
+}
+.article__title__first::before{
+    position: absolute;
+        content: "1.";
+        left: 10%;
+        top: -20px;;
+        @include fontSize(134);
+        color: $transparentGrey;
+        font-family: $montserrat;
+        font-weight: 700;
+}
+.article__title__second::before{
+    position: absolute;
+        content: "2.";
+        left: 10%;
+        top: -20px;;
+        @include fontSize(134);
+        color: $transparentGrey;
+        font-family: $montserrat;
+        font-weight: 700;
+}
+.section__figure{
+    flex: 0 1 50%;
+    .section__img{
+        width:100%;
     }
 }
+.button__fourSquare{
+    margin-top: 20px;
+}
+.section__wrapper__fourSquare > *{
+margin-bottom: 15px;
+}
+//**************Ask A Question Block styles*********************
+.section__blue{
+    background-color: $lightBlue;
+}
+.button__black{
+    background-color: $darkGrey;
+    color: $white;
+    &:hover{
+        color: $darkGrey;
+        background-color:$white;
+        border-color: $darkGrey;
+    }
+}
+.questionForm{
+    flex: 1 0 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .questionInput{
+        height: 35px;
+        background: transparent;
+        border: 1px solid $darkGrey;
+        flex: 1 0 100%;
+        margin: 30px 0;
+
+        text-align: center;
+        @include fontSize(24);
+        font-family: $montserrat;
+        font-weight: 700;
+        color: $darkGrey;
+        &::placeholder{
+            font-family: $montserrat;
+            font-weight: 700;
+            color: $darkGrey;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+}
+//**************Our Team Block styles*********************
+.section__grey>.section__wrapper>.gallery>.gallery__figure{
+    flex: 0 1 33%;
+    margin: 0 15px;
+}
+.section__grey .gallery__figure{
+    .gallery__overlay{
+        background-color: $overlayGreyTransl;
+    }
+    .gallery__overlayText{
+        padding:20% 0;
+        border: none;
+        text-align: center;
+        color: $teamGrey;
+        .article__title{
+            text-transform: capitalize;
+            margin: 0;
+        }
+        .article__text{
+            font-family: $montserrat;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@import "partials/_footer.scss";
 @import "partials/_media.scss";

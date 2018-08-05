@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>James MacDonald - Project 2 Responsive</title>
@@ -131,169 +131,210 @@
                 </p>
             </div>
             <div class="gallery">
-                <figure>
-                    <img src="corporate/assets/image-6.jpeg" alt="Working on Papers">
+                <figure class="gallery__figure">
+                    <img src="corporate/assets/image-6.jpeg" alt="Working on Papers" class="gallery__img">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
-                            <h3 class="article__title"></h3>
-                            <p class="article__text"></p>
+                            <h3 class="article__title">Planning</h3>
+                            <p class="article__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </figure>
-                <figure>
-                    <img src="corporate/assets/image-7.jpeg" alt="Metalic Pyramid">
+                <figure class="gallery__figure">
+                    <img src="corporate/assets/image-7.jpeg" alt="Metalic Pyramid" class="gallery__img">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
-                            <h3 class="article__title"></h3>
-                            <p class="article__text"></p>
+                            <h3 class="article__title">Project #1</h3>
+                            <p class="article__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </figure>
-                <figure>
-                    <img src="corporate/assets/image-8.jpeg" alt="City Skyline">
+                <figure class="gallery__figure">
+                    <img src="corporate/assets/image-8.jpeg" alt="City Skyline" class="gallery__img">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
-                            <h3 class="article__title"></h3>
-                            <p class="article__text"></p>
+                            <h3 class="article__title">Resources</h3>
+                            <p class="article__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </figure>
-                <figure>
-                    <img src="corporate/assets/image-9.jpeg" alt="Madcap Coffe Cups">
+                <figure class="gallery__figure">
+                    <img src="corporate/assets/image-9.jpeg" alt="Madcap Coffe Cups"class="gallery__img">
                     <div class="gallery__overlay">
                         <div class="gallery__overlayText">
-                            <h3 class="article__title"></h3>
-                            <p class="article__text"></p>
+                            <h3 class="article__title">Networking</h3>
+                            <p class="article__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </figure>
             </div>
         </section>
         <!-- Services Four Block Section -->
-        <section class="section sectionWrapper">
-            <h2 class="section__title"></h2>
-            <figure></figure>
-            <article class="article">
-                <h3 class="article__title">Design</h3>
-                <p class="article__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <button class="button"></button>
-            </article>
-            <figure></figure>
-            <article class="article">
-                <h3 class="article__title">Analytics</h3>
-                <p class="article__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <button class="button"></button>
-            </article>
+        <section class="section section__services">
+            <div class="section__wrapper section__wrapper__fourSquare">
+                <h2 class="section__title">Services</h2>
+                <article class="article article__fourSquare">
+                    <h3 class="article__title article__title__first">Design</h3>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <button class="button button__fourSquare">More</button>
+                </article>
+                <figure class="section__figure">
+                    <img src="corporate/assets/image-10.jpeg" alt="Color Design Chart" class="section__img">
+                </figure>
+                <figure class="section__figure">
+                    <img src="corporate/assets/image-11.jpeg" alt="Graphing Information Laptop" class="section__img">
+                </figure>
+                <article class="article article__fourSquare">
+                    <h3 class="article__title article__title__second">Analytics</h3>
+                    <p class="article__text ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <button class="button button__fourSquare">More</button>
+                </article>
+            </div>
         </section>
         <!-- Ask a Question Section -->
         <section class="section section__blue">
-            <h2 class="section__title">Ask a Question</h2>
-            <form action="" class="questionForm">
-                <input type="text" placeholder="Your Message" class="questionInput">
-                <button class="button button__black">Send</button>
-            </form>
+            <div class="section__wrapper">
+                <h2 class="section__title">Ask a Question</h2>
+                <form action="" class="questionForm" name="questionForm" id="questionForm">
+                    <input type="text" placeholder="Your Message" class="questionInput" name="questionInput" id="questionInput">
+                    <button class="button button__black">Send</button>
+                </form>
+            </div>
         </section>
         <!-- Meet the Team Section -->
-        <section class="section section__wrapper">
-            <h2 class="section__title"></h2>
-            <div class="gallery">
-                <figure>
-                    <img src="" alt="">
-                    <div class="gallery__overlay">
-                        <div class="gallery__overlay__text"></div>
-                    </div>
-                </figure>
-                <figure>
-                    <img src="" alt="">
-                    <div class="gallery__overlay">
-                        <div class="gallery__overlay__text"></div>
-                    </div>
-                </figure>
-                <figure>
-                    <img src="" alt="">
-                    <div class="gallery__overlay">
-                        <div class="gallery__overlay__text"></div>
-                    </div>
-                </figure>
+        <section class="section section__grey">
+            <div class="section__wrapper">
+                <h2 class="section__title">Our Team</h2>
+                <div class="gallery">
+                    <figure class="gallery__figure">
+                        <img src="corporate/assets/image-12.jpeg" alt="Azef Urkel Photo" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <div class="gallery__overlayText">
+                                <h3 class="article__title">Azef Urkel</h3>
+                                <p class="article__text">
+                                    Design Overseer
+                                </p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="gallery__figure">
+                        <img src="corporate/assets/image-13.jpeg" alt="David Reagan Photo" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <div class="gallery__overlayText">
+                                <h3 class="article__title">David Regan</h3>
+                                <p class="article__text">
+                                    Programmer
+                                </p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="gallery__figure">
+                        <img src="corporate/assets/image-14.jpeg" alt="Myrtle Beech Photo" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <div class="gallery__overlayText">
+                                <h3 class="article__title">Myrtle Beech</h3>
+                                <p class="article__text">
+                                    CFO
+                                </p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
             </div>
         </section>
         <!-- Footer and Lower Nav -->
-        <footer>
-            <section class="section section__wrapper">
-                <div class="block">
-                    <h4 class="block__title">infohackeryou.com</h4>
-                    <p class="block__text">123-456-7890</p>
-                    <p class="block__text">Toronto, Ontario</p>
-                    <p class="block__text"></p>
-                    <input type="email" placeholder="email address" class="block__input">
-                    <input type="submit" class="block__button">
-                </div>
-                <div class="block">
-                    <h4 class="block__title">About Us</h4>
-                    <p class="block__text"></p>
-                </div>
-                <div class="block">
-                    <h4 class="block__title">Instagram</h4>
-                    <div class="gallery">
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <div class="gallery__overlay"></div>
-                        </figure>
+        <footer class="footer">
+            <div class="section__wrapper">
+                <section class="footer__section__upper">
+                    <div class="block section__block__footer">
+                        <h4 class="block__title">infohackeryou.com</h4>
+                        <p class="block__text">123-456-7890</p>
+                        <p class="block__text">Toronto, Ontario</p>
+                        <p class="block__text"></p>
+                        <input type="email" placeholder="email address" class="block__input">
+                        <input type="submit" class="block__button">
                     </div>
-                </div>
-            </section>
-            <section class="footerNav section__wrapper">
-                <h3></h3>
-                <nav>
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    <p class="copyright__text">2018 All rights reserved &copy;</p>
-                </div>
-            </section>
-            <aside class="socialIcons">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                    <div class="block section__block__footer">
+                        <h4 class="block__title">About Us</h4>
+                        <p class="block__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="block section__block__footer section__block__insta">
+                        <h4 class="block__title">Instagram</h4>
+                        <div class="gallery">
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-15.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-16.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-17.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-18.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-19.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-20.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-21.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                            <figure class="gallery__figure">
+                                <img src="corporate/assets/image-22.jpeg" alt="" class="gallery__img">
+                                <div class="gallery__overlay"></div>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="footer__socialIcons">
+                <ul class="footer__socialIcons__list">
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
             </aside>
+                <section class="footer__nav">
+                    <div class="section__wrapper">
+                        <h3 class="subTitle">Corporate</h3>
+                        <nav class="navBar">
+                            <ul class="navBar__list">
+                                <li><a href="" class="navBar__link">Home</a></li>
+                                <li><a href="" class="navBar__link">Denos</a></li>
+                                <li><a href="" class="navBar__link">Blog</a></li>
+                                <li><a href="" class="navBar__link">Pages</a></li>
+                                <li><a href="" class="navBar__link">About Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="copyright">
+                            <p class="copyright__text">2018 All rights reserved &copy;</p>
+                        </div>
+                    </div>
+                </section>
         </footer>
     </div>
 </body>
