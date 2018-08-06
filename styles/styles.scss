@@ -19,7 +19,7 @@
     border: none;
     transition: 0.5s;
     &:hover{
-        background-color: $buttonGrey;
+        background-color: $white;
         color: $darkBlue;
         border: 1px solid $darkBlue;
         transition: 0.5s;
@@ -278,6 +278,12 @@ margin-bottom: 15px;
 .section__grey>.section__wrapper>.gallery>.gallery__figure{
     flex: 0 1 33%;
     margin: 0 15px;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
 }
 .section__grey .gallery__figure{
     .gallery__overlay{

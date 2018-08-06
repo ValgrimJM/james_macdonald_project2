@@ -5,6 +5,9 @@
     .block__title, .block__text, .subTitle{
         color: $white;
     }
+    .subTitle{
+        font-family: $openSans;
+    }
     .footer__socialIcons{
         position: absolute;
         right:10px;
@@ -13,6 +16,13 @@
             color: $socialGrey;
             @include fontSize(30);
             margin: 20px 0;
+            transition: 0.5s;
+            &:hover{
+                color: $white;
+                transition: color 0.5s;
+                animation: shake 0.5s;
+                animation-iteration-count: 2;
+            }
         }
         .footer__socialIcons__list{
             list-style-type: none;
@@ -39,9 +49,13 @@
             justify-content: center;
             margin: 20px 0 30px 0;
             .navBar__link{
-            color: $white;
-            @include fontSize(16);
-        }
+                color: $white;
+                @include fontSize(16);
+                &:hover{
+                    text-decoration: underline;
+                    transition: 0.5s;
+                }
+            }
         }
     }
 }
@@ -50,11 +64,71 @@
 }
 .section__block__insta .gallery{
     flex-wrap: wrap;
+    justify-content: space-between;
     .gallery__figure{
         flex: 0 0 calc(25% - 10px);
         margin: 5px;
+        &:first-child, &:nth-child(5){
+            margin-left: 0;
+        }
+        &:last-child, &:nth-child(4){
+            margin-right: 0;
+        }
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 .section__block__footer{
-    flex: 1 0 33%;
+    flex: 0 0 calc(33% - 5px);
+    margin: 5px;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    .footer__email{
+        border-color: $white;
+        border-width: 1px 0 1px 1px;
+        border-style: outset;
+        background-color: transparent;
+        height: 20px;
+        width: 50%;
+        text-indent: 10px;
+        @include fontSize(12);
+        &::placeholder{
+            color: $white;
+            @include fontSize(12);
+        }
+    }
+    .footer__email__button{
+        border-width: 1px 1px 1px 0;
+        background-color: transparent;
+        border-color: $white;
+        border-style: outset;
+        @include fontSize(12);
+        color: $airplaneGrey;
+        height: 20px;
+        width: 20%;
+        text-align: right;
+        transition: 0.5s;
+        &:hover{
+            color: $white;
+            transition: 0.5s;
+        }
+    }
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 }
