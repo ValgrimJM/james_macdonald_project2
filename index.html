@@ -19,12 +19,13 @@
                     <h2 class="section__title">Corporate</h2>
                 </div>
                 <nav class="navBar">
-                    <ul class="navBar__list">
-                        <li><a href="#" class="navBar__link">Home</a></li>
-                        <li><a href="#" class="navBar__link">Demo</a></li>
-                        <li><a href="#" class="navBar__link">Blog</a></li>
-                        <li><a href="#" class="navBar__link">Pages</a></li>
-                        <li><a href="#" class="navBar__link">About Us</a></li>
+                    <ul class="navBar__list" id="topNav">
+                        <li class="navBar__item__1"><a href="#" class="navBar__link">Home</a></li>
+                        <li class="navBar__item__2"><a href="#" class="navBar__link">Demo</a></li>
+                        <li class="navBar__item__3"><a href="#" class="navBar__link">Blog</a></li>
+                        <li class="navBar__item__4"><a href="#" class="navBar__link">Pages</a></li>
+                        <li class="navBar__item__5"><a href="#" class="navBar__link">About Us</a></li>
+                        <li class="navBar__item__6"><a href="#" class="navBar__link" onclick="dropDown()"><i class="fa fa-bars"></i></a></li>
                     </ul>
                 </nav>
                 <div class="welcome">
@@ -337,5 +338,16 @@
                 </section>
         </footer>
     </div>
+    <script>
+        function dropDown() {
+            let x = document.getElementById("topNav");
+            if(x.className ==="navBar__list"){
+                x.className += " navBar__list__responsive";
+            }
+            else{
+                x.className = "navBar__list";
+            }
+        }
+    </script>
 </body>
 </html>

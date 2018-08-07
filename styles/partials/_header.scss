@@ -2,6 +2,7 @@
     background-image: url(../corporate/assets/image-1.jpeg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 .section__header .section__wrapper{
@@ -34,8 +35,19 @@
         transition: 0.3s;
     }    
 }
-.navBar__list>li:last-child>.navBar__link{
+.section__header .navBar__list>li:nth-last-child(2)>.navBar__link{
     padding-right: 0;
+}
+.section__header .navBar__list>li:last-child{
+    display: none;
+    .navBar__link{
+        @include fontSize(40);
+    }
+    &:hover{
+        background-color: $overlayGreyTransl;
+        border-radius: 10px;
+        transition: background-color 0.5s;
+    }
 }
 .welcome{
     position: absolute;

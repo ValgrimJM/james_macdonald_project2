@@ -40,7 +40,7 @@
     padding: 40px 0;
 }
 .article__wrapper{
-    @include wrapper(65);
+    @include wrapper(68);
 }
 .section{
     flex: 1 0 100%;
@@ -100,9 +100,8 @@
             }
             .block__list{
                 margin: 0 auto;
-                width: 50%;
                 list-style-type: none;
-                padding: 0;
+                padding-left: 30%;
             }
             .block__title:first-child{
                 transition: 0.5s;
@@ -188,8 +187,10 @@
         }
     }
 .gallery__overlayText{
-    padding:20px;
-    margin:20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10%;
     border: 1px solid $overlayGreyText;
     border-radius: 10px;
     text-align: center;

@@ -19,15 +19,15 @@ html{
     font-color: $darkGrey;
     margin: 0;
 }
+.block .fa-chart-line, .block .fa-laptop, .block .fa-object-group{
+    @include fontSize(80);
+}
 .section__title{
     @include fontSize(48);
     margin: 0;
 }
 .subTitle, .article__title{
     @include fontSize(34);
-}
-.block__title, .navBar__link, .button{
-    @include fontSize(24);
 }
 .section__text{
     font-family: $openSans;
@@ -36,16 +36,15 @@ html{
     text-align: center;
     margin: 35px 0;
 }
+.navBar__link{
+    @include fontSize(25);
+}
+.block__title, .button{
+    @include fontSize(24);
+}
+
 .article__text, .article__para, .block__text, .block__list, .copyright__text{
     font-family: $openSans;
     @include fontSize(16);
 }
-.block .fa-chart-line, .block .fa-laptop, .block .fa-object-group{
-    @include fontSize(80);
-}
-@media(max-width: 940px){
-    html{
-        font-size: 45%;
-    }
 
-}
