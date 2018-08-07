@@ -1,5 +1,5 @@
 .section__header{
-    background-image: url(../corporate/assets/image-1.jpeg);
+    background-image: url(../assets/image-1.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -9,7 +9,35 @@
     position: relative;
     padding: 0;
 }
-
+.skipContent a{
+    color: $white;
+    text-decoration: none;
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    padding: 20px;
+    top: 10%;
+    &:hover{
+        color: $darkGrey;
+        transition: 0.5s;
+    }
+    &:focus{
+        pointer-events: all;
+        opacity: 1;
+        background-color: $darkBlue;
+        border-radius: 10px;
+        animation: skipContent 0.5s ease-out 1;
+        left: 7%;
+    }
+}
+@keyframes skipContent {
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: 7%;
+    }
+}
 .navBar{
     display: flex;
     flex: 1 0 33%;

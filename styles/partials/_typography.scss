@@ -8,7 +8,7 @@ $openSans: "Open Sans", sans-serif;
 html{
     font-size: 35%;
 }
-.pageTitle,.section__title,.subTitle,.block__title,.button, .article__title{
+.pageTitle,.section__title,.subTitle,.block__title,.button, .article__title, .skipContent a{
     text-transform: uppercase;
     font-family: $montserrat;
     font-weight: 700;
@@ -35,6 +35,9 @@ html{
     color: $textGrey;
     text-align: center;
     margin: 35px 0;
+}
+.skipContent a{
+    @include fontSize(25);
 }
 .navBar__link{
     @include fontSize(25);

@@ -25,6 +25,10 @@
     }
 }
 @media (max-width: 768px){
+    .section__header{
+        background-attachment: initial;
+        transition: 0.5s;
+    }
     .section__wrapper, .wrapper{
         width: 75%;
         padding: 25px 0;
@@ -44,11 +48,14 @@
     }
     .section__header .navBar__list>li:not(:last-child){
         display: none;
+        position: absolute;
     }
     .section__header .navBar__list.navBar__list__responsive{
         li[class*="navBar__item"]{
             background-color: $overlayGreyTransl;
             border-radius: 10px 10px 0 0;
+            transition: border-radius 0.5s;
+            transition-delay: 0.3s;
             .navBar__link{
                 color: $white;
                 padding: 0 10px;
@@ -65,6 +72,7 @@
             position: absolute;
             max-width: 120px;
             border-radius: 0;
+            animation: slide 0.5s linear 1;
             .navBar__link{
                 padding: 0 50px;
             }
@@ -88,6 +96,14 @@
             }
         }
     }
+    @keyframes slide{
+        0%{
+            right: -56%;
+        }
+        100%{
+            right: -40px;
+        }
+    }
     
     .footer__section__upper{
         flex-wrap: wrap;
@@ -101,9 +117,7 @@
     }
 }
 @media (max-width: 700px){
-    .section__header{
-        background-attachment: initial;
-    }
+    
     .welcome{
         top: 175%;
     }
@@ -136,6 +150,9 @@
         }
         .footer__email, .footer__email::placeholder, .footer__email__button{
             @include fontSize(20);
+        }
+        .footer__nav .navBar__list{
+            margin: 10px 0 15px 0;
         }
     }
     .footer .footer__socialIcons{
