@@ -143,7 +143,7 @@ html {
 .pageTitle {
   font-size: 83px;
   font-size: 8.3rem;
-  font-color: #1d1d1d;
+  color: #1d1d1d;
   margin: 0; }
 
 .block .fa-chart-line, .block .fa-laptop, .block .fa-object-group {

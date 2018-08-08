@@ -16,7 +16,7 @@ html{
 
 .pageTitle{
     @include fontSize(83);
-    font-color: $darkGrey;
+    color: $darkGrey;
     margin: 0;
 }
 .block .fa-chart-line, .block .fa-laptop, .block .fa-object-group{
