@@ -977,23 +977,48 @@ html {
   .section__header .navBar__item__1 {
     top: calc(1 * 20px + 27px);
     right: -40px;
-    height: 20px; }
+    height: 20px; } }
+  @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .section__header .navBar__item__1 {
+      top: calc(1 * 20px + 24px); } }
+
+@media (max-width: 768px) {
   .section__header .navBar__item__2 {
     top: calc(2 * 20px + 27px);
     right: -40px;
-    height: 20px; }
+    height: 20px; } }
+  @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .section__header .navBar__item__2 {
+      top: calc(2 * 20px + 24px); } }
+
+@media (max-width: 768px) {
   .section__header .navBar__item__3 {
     top: calc(3 * 20px + 27px);
     right: -40px;
-    height: 20px; }
+    height: 20px; } }
+  @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .section__header .navBar__item__3 {
+      top: calc(3 * 20px + 24px); } }
+
+@media (max-width: 768px) {
   .section__header .navBar__item__4 {
     top: calc(4 * 20px + 27px);
     right: -40px;
-    height: 20px; }
+    height: 20px; } }
+  @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .section__header .navBar__item__4 {
+      top: calc(4 * 20px + 24px); } }
+
+@media (max-width: 768px) {
   .section__header .navBar__item__5 {
     top: calc(5 * 20px + 27px);
     right: -40px;
-    height: 20px; }
+    height: 20px; } }
+  @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .section__header .navBar__item__5 {
+      top: calc(5 * 20px + 24px); } }
+
+@media (max-width: 768px) {
   @-webkit-keyframes slide {
     0% {
       right: -56%; }

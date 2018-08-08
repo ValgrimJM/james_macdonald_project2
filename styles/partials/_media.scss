@@ -93,6 +93,9 @@
                 top: calc(#{$linkNum} * 20px + 27px);
                 right: -40px;
                 height: 20px;
+                @media screen and (-webkit-min-device-pixel-ratio:0){
+                    top: calc(#{$linkNum} * 20px + 24px);
+                }
             }
         }
     }
