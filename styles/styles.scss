@@ -193,6 +193,9 @@
     border-radius: 10px;
     text-align: center;
     color: $overlayGreyText;
+    .article__title{
+        color: $overlayGreyText;
+    }
 }
 //**************Four Squares Block styles*********************
 .article__fourSquare{

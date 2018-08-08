@@ -528,6 +528,8 @@ html {
   border-radius: 10px;
   text-align: center;
   color: #e6e2e2; }
+  .gallery__overlayText .article__title {
+    color: #e6e2e2; }
 
 .article__fourSquare {
   -webkit-box-flex: 0;
