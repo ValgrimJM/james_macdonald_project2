@@ -10,13 +10,13 @@ html{
 }
 .pageTitle,.section__title,.subTitle,.block__title,.button, .article__title, .skipContent a{
     text-transform: uppercase;
+    color: $darkGrey;
     font-family: $montserrat;
     font-weight: 700;
 }
 
 .pageTitle{
     @include fontSize(83);
-    color: $darkGrey;
     margin: 0;
 }
 .block .fa-chart-line, .block .fa-laptop, .block .fa-object-group{

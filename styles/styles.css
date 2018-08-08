@@ -137,13 +137,13 @@ html {
 
 .pageTitle, .section__title, .subTitle, .block__title, .button, .article__title, .skipContent a {
   text-transform: uppercase;
+  color: #1d1d1d;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
 .pageTitle {
   font-size: 83px;
   font-size: 8.3rem;
-  color: #1d1d1d;
   margin: 0; }
 
 .block .fa-chart-line, .block .fa-laptop, .block .fa-object-group {
