@@ -947,7 +947,8 @@ html {
     transition: border-radius 0.5s;
     -webkit-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
-    transition-delay: 0.3s; }
+    transition-delay: 0.3s; 
+    padding: 3px 0;}
     .section__header .navBar__list.navBar__list__responsive li[class*="navBar__item"] .navBar__link {
       color: #ffffff;
       padding: 0 10px; }
